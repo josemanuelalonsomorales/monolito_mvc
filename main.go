@@ -26,7 +26,7 @@ type Usuario struct {
 
 func main() {
 	var err error
-	cadenaConexion := "user=postgres password=sh0ut1nk dbname=transferencias_db sslmode=disable"
+	cadenaConexion := "user=postgres password=root dbname=transferencias_db sslmode=disable"
 
 	conexionBaseDatos, err = sql.Open("postgres", cadenaConexion)
 	if err != nil {
